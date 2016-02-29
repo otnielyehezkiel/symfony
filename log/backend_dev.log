@@ -3340,3 +3340,122 @@ Feb 28 11:20:58 symfony [info] {sfWebDebugLogger} Factories 28.91 ms (1)
 Feb 28 11:20:58 symfony [info] {sfWebDebugLogger} Action "home/getJsonPR" 58.64 ms (1)
 Feb 28 11:20:58 symfony [info] {sfWebDebugLogger} View "None" for "home/getJsonPR" 0.01 ms (1)
 Feb 28 11:20:58 symfony [info] {sfWebResponse} Send content (226 o)
+Feb 29 06:45:35 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/getJsonPR' with parameters array (  'module' => 'home',  'action' => 'getJsonPR\'',)
+Feb 29 06:45:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 29 06:45:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 29 06:45:35 symfony [info] {homeActions} Call "homeActions->executeGetJsonPR()"
+Feb 29 06:45:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 29 06:45:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 29 06:45:35 symfony [info] {sfWebDebugLogger} Configuration 674.41 ms (9)
+Feb 29 06:45:35 symfony [info] {sfWebDebugLogger} Factories 146.42 ms (1)
+Feb 29 06:45:35 symfony [info] {sfWebDebugLogger} Action "home/getJsonPR" 0.33 ms (1)
+Feb 29 06:45:35 symfony [info] {sfWebDebugLogger} View "None" for "home/getJsonPR" 0.02 ms (1)
+Feb 29 06:45:35 symfony [info] {sfWebResponse} Send content (17157 o)
+Feb 29 06:45:36 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/getJsonPR with parameters array (  'module' => 'home',  'action' => 'getJsonPR',)
+Feb 29 06:45:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 29 06:45:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 29 06:45:36 symfony [info] {homeActions} Call "homeActions->executeGetJsonPR()"
+Feb 29 06:45:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 29 06:45:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 29 06:45:36 symfony [info] {sfWebDebugLogger} Configuration 41.55 ms (8)
+Feb 29 06:45:36 symfony [info] {sfWebDebugLogger} Factories 164.48 ms (1)
+Feb 29 06:45:36 symfony [info] {sfWebDebugLogger} Action "home/getJsonPR" 0.49 ms (1)
+Feb 29 06:45:36 symfony [info] {sfWebDebugLogger} View "None" for "home/getJsonPR" 0.03 ms (1)
+Feb 29 06:45:37 symfony [info] {sfWebResponse} Send content (17314 o)
+Feb 29 06:45:40 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/getJsonPR with parameters array (  'module' => 'home',  'action' => 'getJsonPR',)
+Feb 29 06:45:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 29 06:45:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 29 06:45:40 symfony [info] {homeActions} Call "homeActions->executeGetJsonPR()"
+Feb 29 06:45:40 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 29 06:45:40 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 29 06:45:40 symfony [info] {sfWebDebugLogger} Configuration 30.03 ms (8)
+Feb 29 06:45:40 symfony [info] {sfWebDebugLogger} Factories 105.62 ms (1)
+Feb 29 06:45:40 symfony [info] {sfWebDebugLogger} Action "home/getJsonPR" 0.33 ms (1)
+Feb 29 06:45:40 symfony [info] {sfWebDebugLogger} View "None" for "home/getJsonPR" 0.02 ms (1)
+Feb 29 06:45:40 symfony [info] {sfWebResponse} Send content (17346 o)
+Feb 29 12:50:53 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/getJsonPR with parameters array (  'module' => 'home',  'action' => 'getJsonPR',)
+Feb 29 12:50:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 29 12:50:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 29 12:50:53 symfony [info] {homeActions} Call "homeActions->executeGetJsonPR()"
+Feb 29 12:50:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 29 12:50:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 29 12:50:53 symfony [info] {sfWebDebugLogger} Configuration 108.46 ms (8)
+Feb 29 12:50:53 symfony [info] {sfWebDebugLogger} Factories 221.72 ms (1)
+Feb 29 12:50:53 symfony [info] {sfWebDebugLogger} Action "home/getJsonPR" 0.39 ms (1)
+Feb 29 12:50:53 symfony [info] {sfWebDebugLogger} View "None" for "home/getJsonPR" 0.02 ms (1)
+Feb 29 12:50:53 symfony [info] {sfWebResponse} Send content (17297 o)
+Feb 29 14:04:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/getJsonPR with parameters array (  'module' => 'home',  'action' => 'getJsonPR',)
+Feb 29 14:04:18 symfony [info] {myUser} Automatic user logout due to timeout
+Feb 29 14:04:18 symfony [info] {myUser} User is not authenticated
+Feb 29 14:04:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 29 14:04:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 29 14:04:18 symfony [info] {homeActions} Call "homeActions->executeGetJsonPR()"
+Feb 29 14:04:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 29 14:04:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 29 14:04:18 symfony [info] {sfWebDebugLogger} Configuration 146.78 ms (9)
+Feb 29 14:04:18 symfony [info] {sfWebDebugLogger} Factories 191.93 ms (1)
+Feb 29 14:04:18 symfony [info] {sfWebDebugLogger} Action "home/getJsonPR" 0.78 ms (1)
+Feb 29 14:04:18 symfony [info] {sfWebDebugLogger} View "None" for "home/getJsonPR" 0.02 ms (1)
+Feb 29 14:04:18 symfony [info] {sfWebResponse} Send content (18223 o)
+Feb 29 14:04:21 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/pr with parameters array (  'module' => 'home',  'action' => 'pr',)
+Feb 29 14:04:21 symfony [info] {sfFrontWebController} Action "home/pr" does not exist
+Feb 29 14:04:21 symfony [err] {sfError404Exception} Action "home/pr" does not exist.
+Feb 29 14:04:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Feb 29 14:04:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 29 14:04:21 symfony [info] {sfWebDebugLogger} Configuration 42.56 ms (5)
+Feb 29 14:04:21 symfony [info] {sfWebDebugLogger} Factories 179.58 ms (1)
+Feb 29 14:04:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/PR with parameters array (  'module' => 'home',  'action' => 'PR',)
+Feb 29 14:04:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 29 14:04:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 29 14:04:29 symfony [info] {homeActions} Call "homeActions->executePR()"
+Feb 29 14:04:29 symfony [info] {sfPHPView} Render "D:\GitHub\symfony\apps\backend\modules/home/templates/PRSuccess.php"
+Feb 29 14:04:30 symfony [info] {sfPHPView} Decorate content with "D:\GitHub\symfony\apps\backend\templates/layout.php"
+Feb 29 14:04:30 symfony [info] {sfPHPView} Render "D:\GitHub\symfony\apps\backend\templates/layout.php"
+Feb 29 14:04:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 29 14:04:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 29 14:04:30 symfony [info] {sfWebDebugLogger} Configuration 60.34 ms (9)
+Feb 29 14:04:30 symfony [info] {sfWebDebugLogger} Factories 169.07 ms (1)
+Feb 29 14:04:30 symfony [info] {sfWebDebugLogger} Action "home/PR" 259.49 ms (1)
+Feb 29 14:04:30 symfony [info] {sfWebDebugLogger} View "Success" for "home/PR" 67.70 ms (1)
+Feb 29 14:04:30 symfony [info] {sfWebResponse} Send content (34744 o)
+Feb 29 14:04:34 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/getJsonPR with parameters array (  'module' => 'home',  'action' => 'getJsonPR',)
+Feb 29 14:04:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 29 14:04:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 29 14:04:34 symfony [info] {homeActions} Call "homeActions->executeGetJsonPR()"
+Feb 29 14:04:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 29 14:04:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 29 14:04:34 symfony [info] {sfWebDebugLogger} Configuration 49.90 ms (8)
+Feb 29 14:04:34 symfony [info] {sfWebDebugLogger} Factories 154.11 ms (1)
+Feb 29 14:04:34 symfony [info] {sfWebDebugLogger} Action "home/getJsonPR" 251.69 ms (1)
+Feb 29 14:04:34 symfony [info] {sfWebDebugLogger} View "None" for "home/getJsonPR" 0.02 ms (1)
+Feb 29 14:04:34 symfony [info] {sfWebResponse} Send content (226 o)
+Feb 29 15:01:42 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/getJsonPR with parameters array (  'module' => 'home',  'action' => 'getJsonPR',)
+Feb 29 15:01:42 symfony [info] {myUser} Automatic user logout due to timeout
+Feb 29 15:01:42 symfony [info] {myUser} User is not authenticated
+Feb 29 15:01:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 29 15:01:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 29 15:01:42 symfony [info] {homeActions} Call "homeActions->executeGetJsonPR()"
+Feb 29 15:01:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 29 15:01:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 29 15:01:42 symfony [info] {sfWebDebugLogger} Configuration 41.54 ms (8)
+Feb 29 15:01:42 symfony [info] {sfWebDebugLogger} Factories 149.41 ms (1)
+Feb 29 15:01:42 symfony [info] {sfWebDebugLogger} Action "home/getJsonPR" 0.73 ms (1)
+Feb 29 15:01:42 symfony [info] {sfWebDebugLogger} View "None" for "home/getJsonPR" 0.03 ms (1)
+Feb 29 15:01:42 symfony [info] {sfWebResponse} Send content (18222 o)
+Feb 29 15:01:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /home/PR with parameters array (  'module' => 'home',  'action' => 'PR',)
+Feb 29 15:01:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Feb 29 15:01:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Feb 29 15:01:46 symfony [info] {homeActions} Call "homeActions->executePR()"
+Feb 29 15:01:46 symfony [notice] {sfWebDebugLogger}  Notice at D:\GitHub\symfony\apps\backend\modules\home\actions\actions.class.php on line 76 (Undefined index: Purchase_Requisiton)
+Feb 29 15:01:46 symfony [info] {sfPHPView} Render "D:\GitHub\symfony\apps\backend\modules/home/templates/PRSuccess.php"
+Feb 29 15:01:46 symfony [info] {sfPHPView} Decorate content with "D:\GitHub\symfony\apps\backend\templates/layout.php"
+Feb 29 15:01:46 symfony [info] {sfPHPView} Render "D:\GitHub\symfony\apps\backend\templates/layout.php"
+Feb 29 15:01:46 symfony [warning] {sfWebDebugLogger}  Warning at D:\GitHub\symfony\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 336 (Cannot modify header information - headers already sent by (output started at D:\GitHub\symfony\apps\backend\modules\home\actions\actions.class.php:44))
+Feb 29 15:01:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Feb 29 15:01:46 symfony [warning] {sfWebDebugLogger}  Warning at D:\GitHub\symfony\lib\vendor\symfony\lib\response\sfWebResponse.class.php on line 357 (Cannot modify header information - headers already sent by (output started at D:\GitHub\symfony\apps\backend\modules\home\actions\actions.class.php:44))
+Feb 29 15:01:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Feb 29 15:01:46 symfony [info] {sfWebDebugLogger} Configuration 52.03 ms (9)
+Feb 29 15:01:46 symfony [info] {sfWebDebugLogger} Factories 140.53 ms (1)
+Feb 29 15:01:46 symfony [info] {sfWebDebugLogger} Action "home/PR" 242.42 ms (1)
+Feb 29 15:01:46 symfony [info] {sfWebDebugLogger} View "Success" for "home/PR" 61.48 ms (1)
+Feb 29 15:01:46 symfony [info] {sfWebResponse} Send content (34722 o)

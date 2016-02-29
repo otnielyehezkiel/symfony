@@ -24,10 +24,25 @@ $server->wsdl->addComplexType(
         'Valuation_Price' => array('name' => 'Valuation_Price', 'type' => 'xsd:string'),
     )
 );
+
+$server->wsdl->addComplexType(
+    'PRS',
+    'complexType',
+    'array',
+    '',
+    'SOAP-ENC:Array',
+    array(),
+    array(
+        array('ref'=>'SOAP-ENC:arrayType',
+            'wsdl:arrayType'=> 'tns:PR[]')
+        ),
+    'tns:PR'
+);
+
  
 $server->register('getPR',
             array('token' => 'xsd:string'),  //parameters
-            array('return' => 'tns:PR'),  //output
+            array('return' => 'tns:PRS'),  //output
             'urn:server',   //namespace
             'urn:server#loginServer',  //soapaction
             'rpc', // style
@@ -45,7 +60,7 @@ function getPR($token) {
             "WBS_Element" => "O-10-KD011181-403300.002",
             "Valuation_Price" => "50,000,000"
         );
-        return $arr;
+        return array($arr);
 }
  
 $HTTP_RAW_POST_DATA = isset($HTTP_RAW_POST_DATA) ? $HTTP_RAW_POST_DATA : '';

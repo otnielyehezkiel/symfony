@@ -30,8 +30,8 @@ class homeActions extends sfActions
     $wsdl = "http://localhost/symfony/test/webserver/getPR.php?wsdl";
     //create client object
     $client = new nusoap_client($wsdl, 'wsdl');
-     
-    $err = $client->getError();
+    $err = $client->getError();     
+
     if ($err) {
       // Display the error
       echo '<h2>Constructor error</h2>' . $err;
@@ -41,6 +41,8 @@ class homeActions extends sfActions
      
     //call second function which return complex type
     $result = $client->call('getPR',array('token' => 'selamatdatang'));
+    print_r($result);
+
     return $result;
   }
 
