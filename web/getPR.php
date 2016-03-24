@@ -1,12 +1,10 @@
 <?php
-
-// require_once(dirname(__FILE__).'/../config/ProjectConfiguration.class.php');
-// $configuration = ProjectConfiguration::getApplicationConfiguration('backend', 'prod', false);
-// sfContext::createInstance($configuration)->dispatch();
-
-include_once(dirname(__FILE__).'/../../plugins/sfNuSoapPlugin/lib/model/nusoap.php');
-$server = new nusoap_server("",
-      array('soap_version' => SOAP_1_2));;
+require_once(dirname(__FILE__).'/../config/ProjectConfiguration.class.php');
+$configuration = ProjectConfiguration::getApplicationConfiguration('backend', 'prod', false);
+sfContext::createInstance($configuration)->dispatch();
+include_once(sfConfig::get('app_nusoap_dir').'/nusoap.php');
+include_once('example/aGlobalPluginPartial');
+$server = new nusoap_server;
  
 $server->configureWSDL('server', 'urn:server');
  
@@ -53,21 +51,7 @@ $server->register('getPR',
             'rpc', // style
             'encoded', // use
             'Check user login');  //description
-
-$server->register('hello',
-            array('word' => 'xsd:string'),  //parameters
-            array('word' => 'xsd:string'),  //parameters
-            'urn:server',   //namespace
-            'urn:server#loginServer',  //soapaction
-            'rpc', // style
-            'encoded', // use
-            'Hello World');  //description
-
  
-function hello($someone) { 
-   return "Hello " . $someone . "! - With WSDL";
-} 
-
 function getPR($token) {
         $arr = array(
             "Purchase_Requisiton" => "1100000051",

@@ -4,4 +4,4 @@
 # default values
 all:
   nusoap:
-    dir: %SF_PLUGINS_DIR%/sfNuSoapPlugin/lib/model
+    dir: %SF_PLUGINS_DIR%/sfNuSoapPlugin/lib
