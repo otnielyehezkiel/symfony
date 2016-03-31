@@ -46,32 +46,17 @@ class homeActions extends sfActions
     var_dump($this->matdes);
     var_dump($this->bum);
     var_dump($this->matgroup);
+
+    $material = new Material();
+    $material->setMATNR($this->matnumber);
+    $material->setMTART($this->mattype);
+    $material->setMBRSH($this->isec);
+    $material->setMAKTX($this->matdes);
+    $material->setMEINS($this->bum);
+    $material->setMATKL($this->matgroup);
+
+    $material->save();
     
-    $conn = oci_connect('root', 'root', 'localhost/XE');
-    if (!$conn) {
-        $e = oci_error();
-        trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
-    }
-
-    $stid = oci_parse($conn, 'INSERT INTO MATERIAL (MATNR, MTART, MBRSH, MAKTX, MEINS, MATKL) VALUES(:matnumber, :mattype, :isec, :matdes, :bum, :matgroup)');
-
-    oci_bind_by_name($stid, ':matnumber', $this->matnumber);
-    oci_bind_by_name($stid, ':mattype', $this->mattype);
-    oci_bind_by_name($stid, ':isec', $this->isec);
-    oci_bind_by_name($stid, ':matdes', $this->matdes);
-    oci_bind_by_name($stid, ':bum', $this->bum);
-    oci_bind_by_name($stid, ':matgroup', $this->matgroup);
-    
-
-    $r = oci_execute($stid);  // executes and commits
-
-    if ($r) {
-        print "One row inserted";
-    }
-    oci_free_statement($stid);
-    oci_close($conn);
-
-
     die();
 
     include_once(sfConfig::get('app_nusoap_dir').'/nusoap.php');
