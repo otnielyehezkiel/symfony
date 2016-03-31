@@ -223,4 +223,61 @@ class homeActions extends sfActions
     die();
     return sfView::none;  
   }
+
+  /*request from database eproc*/
+
+  public function executeGetPR(sfWebRequest $request)
+  {
+    include_once(sfConfig::get('sf_plugins_dir').'/sfNuSoapPlugin/lib/model/nusoap.php');
+    $wsdl = "http://localhost/project/test/connection.php?wsdl";
+    //create client object
+    $client = new nusoap_client($wsdl, 'wsdl');
+    $err = $client->getError();     
+    if ($err) {
+      // Display the error
+      echo '<h2>Constructor error</h2>' . $err;
+      // At this point, you know the call that follows will fail
+            exit();
+    }
+     
+    //call second function which return complex type
+    $client->setCredentials("test","test213","basic");
+    $result = $client->call('getPR',array('token' => 'selamatdatang'));
+    //var_dump($result);
+    //die();
+    /*
+    $wsdl = "http://erpdvqa.ptpn10.co.id:8052/sap/bc/srt/wsdl/flv_10002A1112D1/bndg_url/sap/bc/srt/rfc/sap/zws_get_vendor/521/zws_get_vendor/zws_get_vendor?sap-client=521";*/
+      //$client = new nusoap_client($wsdl, 'wsdl');
+      //create client object
+      /*$client = new nusoap_client($wsdl, 'wsdl');
+      //$header('Authorization: Basic '. base64_encode("mukhlis:bismillah"));
+      $client->setCredentials("test","test213","basic");
+      $err = $client->getError();
+      if ($err) {
+        // Display the error
+        echo '<h2>Constructor error</h2>' . $err;
+        // At this point, you know the call that follows will fail
+              exit();
+      }
+       
+      //call second function which return complex type*/
+
+      //}
+      //$client->setCredentials("mukhlis","bismillah","basic");
+      //$result = $client->call('ZFM_VENDOR',array('NAME' => 'Z'));
+      /*var_dump($client);
+      die();*/
+      var_dump($result);
+      echo '<h2>Debug</h2>';
+      echo '<h2>Request</h2>';
+      echo '<pre>' . htmlspecialchars($client ->request, ENT_QUOTES) . '</pre>';
+      echo '<h2>Response</h2>';
+      echo '<pre>' . htmlspecialchars($client ->response, ENT_QUOTES) . '</pre>';
+      echo '<pre>' . htmlspecialchars($client->debug_str, ENT_QUOTES) . '</pre>';
+      echo '<h2>Error</h2>';
+      echo '<pre>' . htmlspecialchars($client->getError(), ENT_QUOTES) . '</pre>';
+      echo '<h2>Fault</h2>';
+      echo '<pre>' . htmlspecialchars($client->fault, ENT_QUOTES) . '</pre>';
+      die();
+  }
 }
